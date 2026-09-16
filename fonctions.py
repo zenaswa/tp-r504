@@ -5,6 +5,6 @@ def puissance(a, b):
 	if a == 0 and b < 0:
 		raise ValueError("0 cannot have a negative exponent")
 	else:
-		for i in range(b+1):
+		for i in range(b):
 			res*=a
 		return res
