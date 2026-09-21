@@ -1,7 +1,7 @@
 import java.io.*;
 import java.net.*;
 
-public class Client2TCP
+public class Client3TCP
 {
 	public static void main( String[] args )
 	{
