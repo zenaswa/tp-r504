@@ -11,7 +11,10 @@ public class ClientHTTP
 			InputStreamReader isw = new InputStreamReader( socket.getInputStream() );
 			BufferedWriter bufOut = new BufferedWriter(osw);
 			BufferedReader bufIn = new BufferedReader(isw);
-			String request= "GET / HTTP/1.0\r\n\r\n";
+			String request= "GET / HTTP/1.1\r\n" +
+							"Host: " + args[0] + "\r\n" +
+							"Connection: close\r\n" +
+							"\r\n";
 			bufOut.write(request, 0, request.length());
 			bufOut.flush();
 			
